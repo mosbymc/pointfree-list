@@ -1,0 +1,10 @@
+routes/**
+tests/**
+**
+public/**
+.tmp/**
+dist/**
+node_modules/**
+tests/**
+yuidoc/**
+jsdoc_plugin/**

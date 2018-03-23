@@ -1,0 +1,55 @@
+version: "2"
+
+plugins:
+  eslint:
+    enabled: true
+
+checks:
+  argument-count:
+    config:
+      threshold: 6
+  file-lines:
+    config:
+      threshold: 300
+  method-count:
+    config:
+      threshold: 40
+  method-complexity:
+      config:
+        threshold: 10
+  identical-code:
+      config:
+        threshold: 100
+  similar-code:
+      enabled: false
+
+exclude_patterns:
+- "coverage/**/*"
+- "dev_browser/**/*"
+- "dist/**/*"
+- "documentation/**/*"
+- "groups/**/*"
+- "jsdoc_plugin/**/*"
+- "lens_as_data_structure"
+- "misc/**/*"
+- "node_modules/**/*"
+- "plato/**/*"
+- "routes/**/*"
+- "test/**/*"
+- "typings/**/*"
+- ".babelrc"
+- ".eslintignore"
+- ".eslintrc.js"
+- ".gitignore"
+- ".jshintignore"
+- ".jshintrc"
+- ".snyk"
+- "app.js"
+- "gulp.config.js"
+- "gulpfile.js"
+- "index.js"
+- "LICENSE"
+- "README.md"
+- "wallaby.js"
+- "**/*.yml"
+- "**/*.json"
